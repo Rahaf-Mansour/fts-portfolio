@@ -1,0 +1,20 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: url(images/cursor.png), auto;
+}
+
+/* General Styling Start */
+
+/*
+::-webkit-scrollbar {
+    background-color: #fff1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+*/
