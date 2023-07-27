@@ -114,13 +114,170 @@ span.link a,
 
 /* Header Styling End*/
 
+
+/* Main Section Styling Start*/
+
+/* Left Content Styling Start  */
+.main {
+    width: 100%;
+    background-image: linear-gradient(to right, #1a1919, #b3717c);
+    background-attachment: fixed;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main h2 {
+    color: antiquewhite;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px #f10054;
+}
+
+.main h3 {
+    color: antiquewhite;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.remove {
+    display: inline;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.left-content h3 {
+    max-width: 540px;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.download-btn {
+    color: #fff1f1;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 7px 10px;
+    border: none;
+    background-color: #ff1768;
+    transition: 0.7s ease-out;
+    animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color: #d17e7ef4;
+    }
+
+    to {
+        background-color: #f10054;
+    }
+}
+
+.download-btn:hover {
+    background-color: #f10054;
+    transform: scale(1.1);
+    box-shadow: inset 170px 0 0 0 #bcc5ae;
+    color: black;
+}
+
+.icon a {
+    color: white;
+    font-size: 1.3em;
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 10px;
+    transition: 0.3s;
+}
+
+.icon a:hover,
+.email-icon:hover {
+    color: #ff1768;
+}
+
+.right-image {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    /* Add this to make the container a flex container */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+}
+
+
+.right-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 80%;
+    border: 0.2rem solid #d17e7ef4;
+    opacity: 0.9;
+    filter: grayscale(30%);
+    /* Apply the grayscale effect by default */
+    transition: filter 0.2s ease;
+    /* Add transition for smooth effect */
+}
+
+.right-image img:hover {
+    transform: scale(1.08);
+    border-radius: 60% 40% 40% 80%;
+    transition: 0.8s ease;
+    filter: none;
+    opacity: 1;
+}
+
+/* Add this animation for moving elements to the right */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to specific elements */
+.all,
+.logo {
+    animation: slideInRight 1s forwards;
+}
+
+.right-image {
+    animation: slideInRight 2s forwards;
+}
+
+/* Left Content Styling End */
+
+/* Main Section Styling End*/
+
+
+
 /* Media Query Styling Start */
 
 /* For Mobile size */
 @media only screen and (max-width: 768px) {
 
     section {
-        padding: 1.2rem;
+        /* padding: 1.2rem; */
+        padding: 4rem;
     }
 
     /* Header Start */
@@ -160,6 +317,10 @@ span.link a,
 
     .icon a {
         padding-right: 12px;
+    }
+
+    .right-header {
+        animation: slideInRight 2s forwards;
     }
 }
 
