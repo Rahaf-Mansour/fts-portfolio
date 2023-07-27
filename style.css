@@ -32,3 +32,84 @@ h3.title {
 }
 
 /* General Styling End */
+
+
+/* Header Styling Start */
+
+header {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 10%;
+    position: relative;
+    /* Add this to establish a stacking context */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/stars.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.88;
+    z-index: -1;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+}
+
+.logo span,
+.navbar a:hover,
+.navbar a.active,
+span.link a,
+.main h3 span {
+    color: #fa9c9c;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    transition: 0.3s;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar {
+    font-size: 1.3em;
+    z-index: 1000;
+    background-color: #fa9c9c;
+    border-radius: 6px;
+    padding: 0 7px;
+    margin-right: 10px;
+    display: none;
+}
+
+.moon-icon {
+    color: #fa9c9c;
+    font-size: 1.6em;
+    display: block;
+    margin: auto;
+}
+
+/* Header Styling End*/
