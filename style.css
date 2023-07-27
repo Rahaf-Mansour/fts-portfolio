@@ -266,7 +266,106 @@ span.link a,
 
 /* Main Section Styling End*/
 
+/* About Me Section Styling Start  */
 
+
+.about {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: url(images/remon.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* flex: 1;
+    padding: 0 20px;
+    /* Set a position and z-index to place the text above the background image */
+    position: relative;
+    z-index: 1;
+    /* Set a background color or opacity for better readability */
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.about h4 {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.about .title span {
+    color: #f10054
+}
+
+.about-bg {
+    border-radius: 35px;
+    padding: 50px;
+    min-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.about-content {
+    max-width: 900px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.foothill-link a {
+    color: #f10054;
+    text-decoration: none;
+}
+
+.about-content p {
+    padding-bottom: 10px;
+}
+
+.list {
+    padding: 10px 20px;
+    list-style: none;
+}
+
+ul.list li {
+    background-image: url('images/black-star.png');
+    padding-left: 30px;
+    /* Set the icon as the background image */
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* Vertically align the icon to the center */
+    line-height: 1.6;
+    /* Adjust the line height for proper vertical alignment */
+    margin-bottom: 10px;
+    /* Add some space between list items */
+}
+
+.extra {
+    display: none;
+}
+
+.spacing {
+    padding: 15px 0 30px 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label::before {
+    content: "Read More";
+    border: 2px dashed black;
+    padding: 10px 20px;
+}
+
+input[type="checkbox"]:checked~label::before {
+    content: "Read Less";
+}
+
+.extra:has(~input[type="checkbox"]:checked) {
+    display: block;
+}
+
+/* About Me Section Styling End  */
 
 /* Media Query Styling Start */
 
