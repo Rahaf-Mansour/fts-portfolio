@@ -113,3 +113,56 @@ span.link a,
 }
 
 /* Header Styling End*/
+
+/* Media Query Styling Start */
+
+/* For Mobile size */
+@media only screen and (max-width: 768px) {
+
+    section {
+        padding: 1.2rem;
+    }
+
+    /* Header Start */
+    nav.navbar {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        font-size: 1.1em;
+    }
+
+    /* Header End */
+
+    /* Main Section Start */
+
+    .all {
+        flex-direction: column;
+    }
+
+    .right-image {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .main h2 span {
+        font-size: 2.3em;
+    }
+
+    .remove {
+        display: none;
+    }
+
+    .download-btn {
+        font-size: 1.1em;
+    }
+
+    .icon a {
+        padding-right: 12px;
+    }
+}
+
+/* Main Section End */
+
+/* Media Query Styling End */
