@@ -254,9 +254,10 @@ span.link a,
     }
 }
 
-/* Apply the animation to specific elements */
 .all,
-.logo {
+.logo,
+.navbar,
+.moon-icon {
     animation: slideInRight 1s forwards;
 }
 
@@ -281,13 +282,22 @@ span.link a,
     }
 
     /* Header Start */
+
+    .logo {
+        font-size: 1.4em;
+    }
+
     nav.navbar {
         display: none;
     }
 
     .menu-bar {
         display: block;
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+
+    .moon-icon {
+        font-size: 1.5em;
     }
 
     /* Header End */
@@ -322,6 +332,11 @@ span.link a,
     .right-header {
         animation: slideInRight 2s forwards;
     }
+
+    .left-content h3 {
+        font-size: 1.1rem;
+    }
+
 }
 
 /* Main Section End */
