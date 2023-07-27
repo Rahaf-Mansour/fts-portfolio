@@ -26,7 +26,7 @@ section {
 
 h3.title {
     font-weight: 800;
-    font-size: 2.5em;
+    font-size: 2.4em;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -301,7 +301,7 @@ span.link a,
 
 .about-bg {
     border-radius: 35px;
-    padding: 50px;
+    padding: 50px 50px 70px 50px;
     min-width: 500px;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -309,7 +309,7 @@ span.link a,
 .about-content {
     max-width: 900px;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .foothill-link a {
@@ -371,6 +371,10 @@ input[type="checkbox"]:checked~label::before {
 
 /* For Mobile size */
 @media only screen and (max-width: 768px) {
+
+    h3.title {
+        font-size: 2.2em;
+    }
 
     section {
         /* padding: 1.2rem; */
@@ -437,4 +441,12 @@ input[type="checkbox"]:checked~label::before {
 
 /* Main Section End */
 
+
+/* About Me Section Styling Start */
+
+.about-bg {
+    min-width: 350px;
+}
+
+/* About Me Section Styling End  */
 /* Media Query Styling End */
