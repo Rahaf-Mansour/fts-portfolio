@@ -583,7 +583,13 @@ input[type="checkbox"]:checked~label::before {
 
     /* Services Section Styling End  */
 
+    /* Projects Section Styling Start  */
 
+    .projects-content {
+        margin: 0 -30px;
+    }
+
+    /* Projects Section Styling End  */
 
 }
 
