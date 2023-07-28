@@ -423,6 +423,74 @@ input[type="checkbox"]:checked~label::before {
 /* Services Section Styling End  */
 
 
+
+#projects {
+    background-color: #eae2e2;
+}
+
+.projects-title {
+    color: rgb(255, 23, 104);
+    display: flex;
+    justify-content: center;
+}
+
+.projects-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects-card {
+    width: 23em;
+    overflow: hidden;
+    min-height: 14em;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.projects-card:hover {
+    transform: scale(1.1);
+}
+
+.projects-image img {
+    width: 100%;
+    max-height: 11.25em;
+}
+
+.projects-info {
+    padding: 1em;
+
+}
+
+.projects-info h4 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.run-code {
+    display: inline-flex;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.run-code a {
+    text-decoration: none;
+    color: rgb(255, 23, 104);
+}
+
+.run-code a:hover {
+    color: rgba(107, 9, 198, 0.958);
+}
+
+/* Projects Section Styling End  */
+
+
 /* Media Query Styling Start */
 
 /* For Mobile size */
@@ -514,6 +582,8 @@ input[type="checkbox"]:checked~label::before {
     }
 
     /* Services Section Styling End  */
+
+
 
 }
 
