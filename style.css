@@ -507,6 +507,14 @@ input[type="checkbox"]:checked~label::before {
 
     /* About Me Section Styling End  */
 
+    /* Services Section Styling Start  */
+
+    .services .card {
+        margin: 20px -10px;
+    }
+
+    /* Services Section Styling End  */
+
 }
 
 /* Media Query Styling End */
