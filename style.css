@@ -38,7 +38,6 @@ h3.title {
 
 header {
     width: 100%;
-    z-index: 999;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -422,7 +421,72 @@ input[type="checkbox"]:checked~label::before {
 
 /* Services Section Styling End  */
 
+/* Skills Section Styling Start  */
 
+.skills-section {
+    background-image: url(images/blur.jpg);
+}
+
+h3.skills-title {
+    color: white;
+    margin-bottom: 100px;
+}
+
+h3.skills-title span {
+    color: #fa9c9c;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    /* animation: slideInRight 2s forwards; */
+}
+
+.skill-content {
+    width: 40%;
+}
+
+.skill-imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-imgs img {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.5s ease-out;
+}
+
+.skill-imgs img:hover {
+    margin-top: 10px;
+}
+
+.images {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    /* Align the image to the right */
+    align-items: center;
+    /* Center the image vertically */
+}
+
+.images img {
+    width: 80%;
+}
+
+.images img:hover {
+    transition: 1s ease-out;
+    transform: scale(1.1);
+}
+
+/* Skills Section Styling End  */
 
 #projects {
     background-color: #eae2e2;
@@ -430,8 +494,6 @@ input[type="checkbox"]:checked~label::before {
 
 .projects-title {
     color: rgb(255, 23, 104);
-    display: flex;
-    justify-content: center;
 }
 
 .projects-content {
@@ -721,7 +783,40 @@ footer p {
 
 }
 
+
 @media only screen and (max-width: 923px) {
+
+    /* Skills Section Styling Start  */
+
+    .skills-section {
+        min-height: 70vh;
+    }
+
+    .skills {
+        display: inline;
+    }
+
+    .skill-content {
+        display: inline;
+    }
+
+    .skill-imgs {
+        justify-content: center;
+        padding-bottom: 5em
+    }
+
+    .skill-imgs img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .images {
+        display: none;
+    }
+
+    /* Skills Section Styling End  */
+
+
     /* Contact Section Styling Start  */
 
     .container {
@@ -738,7 +833,7 @@ footer p {
     }
 
     .contact-box .right {
-        padding: 20px;
+        padding: 20px 5px;
     }
 
     .field {
@@ -746,7 +841,7 @@ footer p {
     }
 
     /* Contact Section Styling End  */
-}
 
+}
 
 /* Media Query Styling End */
