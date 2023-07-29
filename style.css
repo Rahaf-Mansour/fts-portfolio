@@ -588,6 +588,37 @@ input[type="submit"] {
 
 /* Contact Section Styling End  */
 
+/* Footer Section Styling Start  */
+
+footer {
+    padding: 1em;
+    background-color: rgb(42, 41, 41);
+}
+
+footer p {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.footer-icons {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.footer-icons a {
+    font-size: 1.3em;
+    color: #da8aa6;
+    padding-left: 10px;
+}
+
+.footer-icons a i:hover {
+    color: #eae2e2;
+}
+
+
+/* Footer Section Styling End  */
+
 
 /* Media Query Styling Start */
 
