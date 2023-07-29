@@ -737,6 +737,10 @@ footer p {
         display: none;
     }
 
+    .contact-box .right {
+        padding: 20px;
+    }
+
     .field {
         font-size: 1rem;
     }
