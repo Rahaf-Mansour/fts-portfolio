@@ -719,6 +719,9 @@ footer p {
 
     /* Projects Section Styling End  */
 
+}
+
+@media only screen and (max-width: 923px) {
     /* Contact Section Styling Start  */
 
     .container {
@@ -739,7 +742,7 @@ footer p {
     }
 
     /* Contact Section Styling End  */
-
 }
+
 
 /* Media Query Styling End */
