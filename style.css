@@ -269,9 +269,11 @@ nav ul li {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    /* Set a position and z-index to place the text above the background image */
+    position: relative;
+    z-index: 1;
     /* Set a background color or opacity for better readability */
     background-color: rgba(255, 255, 255, 0.8);
-
 }
 
 .about h4 {
@@ -818,7 +820,7 @@ footer p {
         /* Initially set opacity to 0 */
         visibility: hidden;
         /* Initially set visibility to hidden */
-        z-index: 999;
+
         /* Set a higher z-index for the nav element */
     }
 
@@ -861,6 +863,15 @@ footer p {
 
     #check:checked~label #cancel {
         display: inline-block;
+    }
+
+    #check:checked+.navbar~.main {
+        position: relative;
+        z-index: -1;
+    }
+
+    #check:checked+.navbar~nav ul {
+        z-index: 999;
     }
 
     /* Header End */
