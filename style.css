@@ -109,8 +109,8 @@ nav ul li {
     background-attachment: fixed;
     padding-left: 10%;
     padding-right: 10%;
-    position: relative;
-    z-index: -1;
+    /* position: relative;
+    z-index: -1; */
 }
 
 .main h2 {
@@ -821,7 +821,6 @@ footer p {
         z-index: 999;
         /* Set a higher z-index for the nav element */
     }
-
 
     nav ul li {
         display: block;
