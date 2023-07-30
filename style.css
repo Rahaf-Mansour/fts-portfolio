@@ -652,6 +652,36 @@ footer p {
     color: #eae2e2;
 }
 
+/*teardrop shape styling*/
+.scroll-arrow {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 50% 0 50% 50%;
+    transform: rotate(-45deg);
+    z-index: 9;
+}
+
+/*text styling*/
+#scroll-text {
+    color: white;
+    position: fixed;
+    right: 30px;
+    bottom: 33px;
+    font-size: 18px;
+    z-index: 10;
+    text-shadow: 2px 2px 10px purple;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#scroll-text:hover {
+    color: lightgreen;
+}
+
 /* Footer Section Styling End  */
 
 
@@ -837,15 +867,6 @@ footer p {
 
     #check:checked~label #cancel {
         display: inline-block;
-    }
-
-    #check:checked+.navbar~.main {
-        position: relative;
-        z-index: -1;
-    }
-
-    #check:checked+.navbar~nav ul {
-        z-index: 999;
     }
 
     /* Header End */
