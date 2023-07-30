@@ -767,32 +767,6 @@ footer p {
 
     /* Skills Section Styling End  */
 
-
-    /* Contact Section Styling Start  */
-
-    .container {
-        padding: 0;
-        min-width: 170px;
-    }
-
-    .contact-box {
-        grid-template-columns: none;
-    }
-
-    .contact-box .left {
-        display: none;
-    }
-
-    .contact-box .right {
-        padding: 20px 5px;
-    }
-
-    .field {
-        font-size: 1rem;
-    }
-
-    /* Contact Section Styling End  */
-
 }
 
 @media only screen and (max-width: 938px) {
@@ -876,6 +850,39 @@ footer p {
 
     /* Header End */
 
+}
+
+@media only screen and (max-width: 1090px) {
+
+    /* Contact Section Styling Start  */
+
+    .container {
+        padding: 0;
+        min-width: 170px;
+    }
+
+    .contact-box {
+        grid-template-columns: none;
+    }
+
+    .contact-box .left {
+        display: none;
+    }
+
+    .contact-box .right {
+        padding: 20px 5px;
+    }
+
+    input[type="submit"] {
+        width: 35%;
+        height: 2.2em;
+    }
+
+    .field {
+        font-size: 1rem;
+    }
+
+    /* Contact Section Styling End  */
 }
 
 /* Media Query Styling End */
