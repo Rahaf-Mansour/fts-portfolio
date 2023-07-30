@@ -30,26 +30,12 @@ h3.title {
 
 /* Header Styling Start */
 
-header {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 10%;
-    position: relative;
-    /* Add this to establish a stacking context */
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+nav {
     background-image: url(images/glitter-stars.gif);
+    height: 75px;
     opacity: 0.88;
+    width: 100%;
+    padding: 0 10%;
 }
 
 .logo {
@@ -59,19 +45,29 @@ header::before {
     font-weight: bold;
     font-size: 1.7em;
     letter-spacing: 2px;
+    line-height: 75px;
 }
 
 .logo span,
-.navbar a:hover,
-.navbar a.active,
+.navbar ul li a:hover,
 span.link a,
 .main h3 span {
     color: #fa9c9c;
     text-decoration: none;
     letter-spacing: 2px;
+    transition: 0.5s;
 }
 
-.navbar a {
+.navbar ul li a.active {
+    color: #fa9c9c;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
     color: antiquewhite;
     text-decoration: none;
     font-size: 1.1em;
@@ -80,30 +76,26 @@ span.link a,
     transition: 0.3s;
 }
 
-.right-header {
-    display: flex;
-    align-items: center;
+nav ul li {
+    display: inline-block;
+    line-height: 75px;
 }
 
-.menu-bar {
-    font-size: 1.3em;
-    z-index: 1000;
-    background-color: #fa9c9c;
+.checkbtn {
+    font-size: 1.5em;
+    float: right;
+    color: #fa9c9c;
+    color: white;
     border-radius: 6px;
     padding: 0 7px;
     margin-right: 10px;
+    line-height: 75px;
     display: none;
 }
 
-
-.moon-icon {
-    color: #fa9c9c;
-    font-size: 1.6em;
-    display: block;
-    margin: auto;
+#check {
+    display: none;
 }
-
-
 
 /* Header Styling End*/
 
@@ -117,6 +109,8 @@ span.link a,
     background-attachment: fixed;
     padding-left: 10%;
     padding-right: 10%;
+    position: relative;
+    z-index: -1;
 }
 
 .main h2 {
@@ -213,7 +207,6 @@ span.link a,
     /* Center items vertically */
 }
 
-
 .right-image img {
     max-width: 100%;
     max-height: 100%;
@@ -258,8 +251,6 @@ span.link a,
     animation: slideInRight 2s forwards;
 }
 
-
-
 /* Left Content Styling End */
 
 /* Main Section Styling End*/
@@ -278,11 +269,6 @@ span.link a,
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    /* flex: 1;
-    padding: 0 20px;
-    /* Set a position and z-index to place the text above the background image */
-    position: relative;
-    z-index: 1;
     /* Set a background color or opacity for better readability */
     background-color: rgba(255, 255, 255, 0.8);
 
@@ -345,17 +331,17 @@ ul.list li {
     padding: 15px 0 30px 0;
 }
 
-input[type="checkbox"] {
+.about-content input[type="checkbox"] {
     display: none;
 }
 
-label::before {
+.about-content label::before {
     content: "Read More";
     border: 2px dashed black;
     padding: 10px 20px;
 }
 
-input[type="checkbox"]:checked~label::before {
+.about-content input[type="checkbox"]:checked~label::before {
     content: "Read Less";
 }
 
@@ -435,7 +421,6 @@ h3.skills-title span {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
-    /* animation: slideInRight 2s forwards; */
 }
 
 .skill-content {
@@ -615,7 +600,7 @@ input[type="submit"] {
     width: 55%;
     height: 2em;
     background-color: #3b3b4f;
-    min-width: 140px;
+    min-width: 120px;
     margin-top: 20px;
 }
 
@@ -634,7 +619,6 @@ input[type="submit"] {
 .btn:hover {
     background-color: #216845;
 }
-
 
 /* Contact Section Styling End  */
 
@@ -666,7 +650,6 @@ footer p {
     color: #eae2e2;
 }
 
-
 /* Footer Section Styling End  */
 
 
@@ -680,27 +663,66 @@ footer p {
     }
 
     section {
-        /* padding: 1.2rem; */
         padding: 4rem;
     }
 
     /* Header Start */
 
+
     .logo {
         font-size: 1.45em;
     }
 
-    nav.navbar {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2a2929;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        visibility: hidden;
+        /* Initially set visibility to hidden */
+        z-index: 999;
+        /* Set a higher z-index for the nav element */
+    }
+
+
+    nav ul li {
+        display: block;
+    }
+
+    .navbar ul li a {
+        padding-left: 0;
+        font-size: 19px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        padding-top: 50px;
+        opacity: 1;
+        /* Set opacity to 1 when the checkbox is checked */
+        visibility: visible;
+        /* Set visibility to visible when the checkbox is checked */
+    }
+
+    #check~label #cancel {
         display: none;
     }
 
-    .menu-bar {
-        display: block;
-        font-size: 1em;
+    #check:checked~label #menu {
+        display: none;
     }
 
-    .moon-icon {
-        font-size: 1.5em;
+    #check:checked~label #cancel {
+        display: inline-block;
     }
 
     /* Header End */
@@ -771,7 +793,6 @@ footer p {
     /* Projects Section Styling End  */
 
 }
-
 
 @media only screen and (max-width: 923px) {
 
