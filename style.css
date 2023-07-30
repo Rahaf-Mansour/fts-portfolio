@@ -109,6 +109,7 @@ nav ul li {
     background-attachment: fixed;
     padding-left: 10%;
     padding-right: 10%;
+    min-height: 85vh;
     /* position: relative;
     z-index: -1; */
 }
@@ -688,6 +689,13 @@ footer p {
 /* Media Query Styling Start */
 
 /* For Mobile size */
+@media only screen and (max-width: 400px) {
+    .about {
+        background-size: contain;
+    }
+}
+
+
 @media only screen and (max-width: 767px) {
 
     h3.title {
