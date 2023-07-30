@@ -689,11 +689,7 @@ footer p {
 /* Media Query Styling Start */
 
 /* For Mobile size */
-@media only screen and (max-width: 400px) {
-    .about {
-        background-size: contain;
-    }
-}
+
 
 
 @media only screen and (max-width: 767px) {
@@ -810,7 +806,6 @@ footer p {
 @media only screen and (max-width: 938px) {
     /* Header Start */
 
-
     .logo {
         font-size: 1.45em;
     }
@@ -856,25 +851,30 @@ footer p {
         transition: 0.5s;
     }
 
-    #check:checked~ul {
-        left: 0;
-        padding-top: 15%;
-        opacity: 1;
-        /* Set opacity to 1 when the checkbox is checked */
-        visibility: visible;
-        /* Set visibility to visible when the checkbox is checked */
-    }
-
-    #check~label #cancel {
+    #cancel {
         display: none;
     }
 
-    #check:checked~label #menu {
+    input#check:checked~nav .checkbtn #menu {
         display: none;
     }
 
-    #check:checked~label #cancel {
+    input#check:checked~nav .checkbtn #cancel {
         display: inline-block;
+    }
+
+    input#check:checked~section#main.main {
+        position: relative;
+        z-index: -1;
+    }
+
+    input#check:checked~.navbar ul {
+        left: 0;
+        width: 100%;
+        background-color: #2a2929;
+        opacity: 1;
+        visibility: visible;
+        padding-top: 15%;
     }
 
     /* Header End */
