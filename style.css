@@ -666,67 +666,6 @@ footer p {
         padding: 4rem;
     }
 
-    /* Header Start */
-
-
-    .logo {
-        font-size: 1.45em;
-    }
-
-    .checkbtn {
-        display: block;
-    }
-
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #2a2929;
-        top: 75px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-        opacity: 0;
-        /* Initially set opacity to 0 */
-        visibility: hidden;
-        /* Initially set visibility to hidden */
-        z-index: 999;
-        /* Set a higher z-index for the nav element */
-    }
-
-
-    nav ul li {
-        display: block;
-    }
-
-    .navbar ul li a {
-        padding-left: 0;
-        font-size: 19px;
-    }
-
-    #check:checked~ul {
-        left: 0;
-        padding-top: 50px;
-        opacity: 1;
-        /* Set opacity to 1 when the checkbox is checked */
-        visibility: visible;
-        /* Set visibility to visible when the checkbox is checked */
-    }
-
-    #check~label #cancel {
-        display: none;
-    }
-
-    #check:checked~label #menu {
-        display: none;
-    }
-
-    #check:checked~label #cancel {
-        display: inline-block;
-    }
-
-    /* Header End */
-
     /* Main Section Start */
 
     .all {
@@ -851,6 +790,81 @@ footer p {
     }
 
     /* Contact Section Styling End  */
+
+}
+
+@media only screen and (max-width: 938px) {
+    /* Header Start */
+
+
+    .logo {
+        font-size: 1.45em;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2a2929;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        opacity: 0;
+        /* Initially set opacity to 0 */
+        visibility: hidden;
+        /* Initially set visibility to hidden */
+        z-index: 999;
+        /* Set a higher z-index for the nav element */
+    }
+
+
+    nav ul li {
+        display: block;
+    }
+
+    .navbar ul li a {
+        padding-left: 0;
+        font-size: 19px;
+    }
+
+    .navbar ul li a.active {
+        color: antiquewhite;
+    }
+
+    .navbar ul li a.active:hover {
+        color: #fa9c9c;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        padding-top: 15%;
+        opacity: 1;
+        /* Set opacity to 1 when the checkbox is checked */
+        visibility: visible;
+        /* Set visibility to visible when the checkbox is checked */
+    }
+
+    #check~label #cancel {
+        display: none;
+    }
+
+    #check:checked~label #menu {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: inline-block;
+    }
+
+    /* Header End */
 
 }
 
