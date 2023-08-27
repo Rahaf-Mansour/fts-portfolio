@@ -25,12 +25,11 @@ In conjunction with the aforementioned key features, this website includes:
 5. Contact: A convenient contact form to enable potential clients or employers to get in touch.
 6. Downloadable CV: The homepage features a downloadable version of my CV, accessible through a dedicated download button.
 
-## About Me
-- Name: Rahaf Mansour
-- Email: rahafmansour2018@gmail.com
+## Take a look:
+![image](https://github.com/Rahaf-Mansour/fts-portfolio/assets/109438456/184625da-d0c1-4f4e-868f-204a5f9aa4ff)
 
 ## Acknowledgements
 I extend my sincere gratitude to Foothill Technology Solutions for granting me the opportunity to participate in this internship cycle. Their unwavering support has been instrumental throughout the development of this project.
 
-<img src="https://github.com/Rahaf-Mansour/fts-portfolio/assets/109438456/6c99016a-121f-43ac-a7eb-bb07321917e9" alt="fts-logo" width="300">
+<img src="https://github.com/Rahaf-Mansour/fts-portfolio/assets/109438456/6c99016a-121f-43ac-a7eb-bb07321917e9" alt="fts-logo" width="250">
 
